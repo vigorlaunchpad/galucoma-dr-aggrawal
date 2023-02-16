@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a class='logo' href="">
+              <img src="images/logo.png">
+            </a>
+        </div>
+        <img class="road-image" src="./images/background.png" alt="">
+
+        <div class="form">
+            <div class="submit-form">
+                <h2 class="galucoma">
+                    Why wait for Glaucoma
+                    <br />warning signs?
+                </h2>
+                 <p class="galucoma-paragraph" >Book Free Consultation Today</p>
+                 <form>
+                   <div class="form-group">
+                     <input type="text"  class="form-control form-input" placeholder="Name">
+                   </div>
+                   <div class="form-group">
+                     <input type="tel" class="form-control form-input" placeholder="Mobile Number">
+                   </div>
+                   <div class="form-group form-select">
+                     <select id="States" name="States" class="form-control select-1">
+                       <option value="" class="select-state form-input" disabled selected hidden>State</option>
+                       <option value="Tamil Nadu">Tamil Nadu</option>
+                       <option value="Karnataka">Karnataka</option>
+                       <option value="Maharashtra">Maharashtra</option>
+                       <option value="Kerala">Kerala</option>
+                       <option value="West Bengal">West Bengal</option>
+                       <option value="Odisha">Odisha</option>
+                       <option value="Andhra Pradesh">Andhra Pradesh</option>
+                       <option value="Puducherry">Puducherry</option>
+                       <option value="Gujarat">Gujarat</option>
+                       <option value="Rajasthan">Rajasthan</option>
+                       <option value="Madhya Pradesh">Madhya Pradesh</option>
+                       <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                       <option value="Andaman">Andaman</option>
+                     </select>
+                   </div>
+                   <div class="terms">
+                     <label class="">
+                       <input type="checkbox" class="">
+                       <span class="">I agree to the <a href="https://webdev.dragarwal.com/terms-of-use/">Terms &
+                           Conditions</a> and <a href="https://webdev.dragarwal.com/terms-of-use/">Privacy Policy</a>.</span>
+                     </label>
+                     
+                     <button type="submit" class="submit-button">SUBMIT</button>
+                   </div>
+                 </form>
+            </div>
+        </div>
+
+        <div class="galucoma-info">
+            <h2 class="galucoma-info-heading" >What is <span class="yellow-span">Glaucoma</span></h2>
+            <div class="galucoma-p">
+              <p class="g-p">
+                  Glaucoma is a set of eye conditions that damages the optic nerve. The optic nerve is located at the back of the eye, and it transmits visual signals from the eye to the brain helping in visualization. Damage to the optic nerve could result in blindness.
+              </p>
+            </div>
+            <div id="image-container">
+              <div class="image-container">
+
+                <img class="eye slider-image" src="./images/image2.jpg" alt="" onclick="changeImage()" >
+                <img class="eye slider-image" src="./images/image3.png" alt="" onclick="changeImage()" style="display:none">
+                <img class="eye slider-image" src="./images/image4.png" alt="" onclick="changeImage()" style="display:none">
+                <img class="eye slider-image" src="./images/image5.png" alt="" onclick="changeImage()" style="display:none">
+                <img class="eye slider-image" src="./images/image5.1.png" alt="" onclick="changeImage()" style="display:none">
+                <img class="eye slider-image" src="./images/image6.png" alt="" onclick="changeImage()" style="display:none">
+                <img class="eye slider-image" src="./images/image7.png" alt="" onclick="changeImage()" style="display:none">
+              </div>
+              <!-- <img class="eye slider-image" src="./images/image2.jpg" alt="" onclick="changeImage()" > -->
+
+              <!-- <img src="image1.jpg" class="slider-image">
+              <img src="image2.jpg" class="slider-image">
+              <img src="image3.jpg" class="slider-image">
+              <img src="image4.jpg" class="slider-image"> -->
+            </div>
+            <div class="button-div">
+
+              <button class="know-more" >Know more about Galucoma</button>
+            </div>
+            <script>
+              let images = document.getElementsByClassName("slider-image");
+              let currentIndex = 0;
+          
+              function showImage(n) {
+                images[currentIndex].style.display = "none";
+                currentIndex = (n + images.length) % images.length;
+                images[currentIndex].style.display = "block";
+              }
+          
+              document.addEventListener("DOMContentLoaded", function() {
+                // show the first image initially
+                showImage(0);
+          
+                // add event listeners to each image
+                for (let i = 0; i < images.length; i++) {
+                  images[i].addEventListener("click", function() {
+                    showImage(currentIndex + 1);
+                  });
+                }
+              });
+            </script>
+        </div>
+
+        <div class="galucoma-symptom-main-div">
+          <h2 class="symptom-heading" >
+            Galucoma <span style="color: #083972;" >Symptoms</span>
+          </h2>
+          <div class="galucoma-symptom" >
+            <div class="symptom-box">
+              <img src="./images/Group1.png" alt="">
+              <p>
+                Loss of vison
+              </p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g2.png" alt="">
+<p>
+  Blurry vision
+</p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g3.png" alt="">
+<p>
+  Early presbyopia
+</p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g4.png" alt="">
+<p>
+  Pain in the eye
+</p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g5.png" alt="">
+<p>
+  Presistent headache
+</p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g6.png" alt="">
+              <p>
+                Eye redness
+              </p>
+            </div>
+            <div class="symptom-box-last">
+              <img src="./images/g7.png" alt="">
+              <p>
+                Stomach upset, nausea and vomiting
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="treatments">
+            <h2>Treatments Provided by <span style="color: #45D3ED;" >Dr Agarwals</span></h2>
+            <p class="treatment-p" >Depending on the type of glaucoma, the doctor may treat it using the following methods or even a combination of the methods.</p>
+            <div class="cards">
+
+              <div class="card">
+                <img src="./images/t1.png" class="t-image" alt="">
+                <p class="t-p" >Eye Drops and Oral Medication</p>
+                <!-- <p>Hover over the card to see the hidden paragraph.</p> -->
+                <!-- <div class="card-content">
+                  <p>This is the hidden paragraph. It will appear when the card is hovered over.
+                    This is the hidden paragraph. It will appear when the card is hovered over.
+                  </p>
+                </div> -->
+                <div class="semi-oval">
+                </div>
+            </div>
+            <div class="card">
+              <img src="./images/t2.png" class="t-image" alt="">
+              <p class="t-p" >Eye Drops and Oral Medication</p>
+              <!-- <p>Hover over the card to see the hidden paragraph.</p> -->
+              <!-- <div class="card-content">
+                <p>This is the hidden paragraph. It will appear when the card is hovered over.
+                  This is the hidden paragraph. It will appear when the card is hovered over.
+                </p>
+              </div> -->
+              <div class="semi-oval">
+              </div>
+          </div>
+          <div class="card">
+            <img src="./images/t3.png" class="t-image" alt="">
+            <p class="t-p" >Eye Drops and Oral Medication</p>
+            <!-- <p>Hover over the card to see the hidden paragraph.</p> -->
+            <!-- <div class="card-content">
+              <p>This is the hidden paragraph. It will appear when the card is hovered over.
+                This is the hidden paragraph. It will appear when the card is hovered over.
+              </p>
+            </div> -->
+            <div class="semi-oval">
+            </div>
+        </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
+<!-- .treatments{
+  width: 100%;
+  margin-top: 4rem;
+  height: 726px;
+  background: #062851;
+}
+
+.treatments h2{
+  font-family: 'Roihu';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height, or 150% */
+
+text-align: center;
+padding-top: 3rem;
+color: #FFFFFF;
+}
+.treatment-p{
+  /* position: absolute; */
+width: 895px;
+height: 58px;
+margin: auto;
+margin-top:2rem ;
+/* left: 193px; */
+/* top: 2035px; */
+
+font-family: 'Encode Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+/* or 161% */
+
+text-align: center;
+
+color: #FFFFFF;
+} -->
