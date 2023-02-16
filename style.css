@@ -686,7 +686,163 @@ font-size: 16px
         border-bottom-right-radius: 0;
     }
 }
+@media only screen and (max-width: 768px){
+    .treatments{
+        width: 100%;
+        margin-top: 4rem;
+        height: 125rem;
+        background: #062851;
+        /* display: flex; */
+        /* flex-direction: column; */
+        }
+    .treatments h2{
+        margin: auto;
+        width: 240px;
+        height: 64px;
+        color: #FFFFFF;
+        font-family: 'Roihu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+    }
 
+    .cards{
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; */
+        /* justify-content: space-around; */
+    }
+
+    .card{
+        margin: auto;
+        margin-top: 2rem;
+        height:544px;
+        background: #00858A;
+    }
+
+    .treatment-p{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 3.5rem;
+    }
+
+    .mobile-div{
+        width: 314px;
+        height: 273px;
+        background: #fafafa;
+        border-radius: 6px;
+        
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .types{
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .types-of-galucoma{
+        width: 1098px;
+        height: 871px;
+        background: #0C51A3;
+        border-radius: 28px;
+        margin: auto;
+        margin-top: 5rem;                                
+    }
+    .types-of-galucoma h2{
+        text-align: center;
+        margin-top: 48px;
+        font-family: 'Roihu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        height: 60px;
+        color: #FFFFFF;
+    }
+    .angles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3rem;
+    }
+    .closed-angle{
+        width: 477px;
+        height: 675px;
+        background: #E6F5F8;
+        border-radius: 18px;
+    }
+    .open-angle{
+        width: 477px;
+        height: 675px;
+        background: #E6F5F8;
+        border-radius: 18px;
+    }
+    .closed-angle img{
+        display: flex;
+        margin: auto;
+        margin-top: 34px;
+    }
+    .open-angle img{
+        display: flex;
+        margin: auto;
+        margin-top: 34px;
+    }
+    .closed-angle h3{
+        text-align: center;
+        font-family: 'Encode Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 35px;
+        color: #002E65;
+        margin-top: 34px;
+    }
+    .open-angle h3{
+        text-align: center;
+        font-family: 'Encode Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 35px;
+        color: #002E65;
+        margin-top: 34px;
+    }
+    .closed-angle p{
+        font-family: 'Encode Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+text-align: center;
+
+color: #000000;
+    }
+    .open-angle p{
+        font-family: 'Encode Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+text-align: center;
+
+color: #000000;
+    }
+}
 /* .card {
     position: relative;
     width: 338px;
