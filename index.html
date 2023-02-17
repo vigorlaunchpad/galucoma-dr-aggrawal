@@ -62,7 +62,7 @@
         </div>
 
         <div class="galucoma-info">
-            <h2 class="galucoma-info-heading" >What is <span class="yellow-span">Glaucoma</span></h2>
+            <h2 class="galucoma-info-heading" style="color:white" >What is <span class="yellow-span">Glaucoma</span></h2>
             <div class="galucoma-p">
               <p class="g-p">
                   Glaucoma is a set of eye conditions that damages the optic nerve. The optic nerve is located at the back of the eye, and it transmits visual signals from the eye to the brain helping in visualization. Damage to the optic nerve could result in blindness.
@@ -79,12 +79,7 @@
                 <img class="eye slider-image" src="./images/image6.png" alt="" onclick="changeImage()" style="display:none">
                 <img class="eye slider-image" src="./images/image7.png" alt="" onclick="changeImage()" style="display:none">
               </div>
-              <!-- <img class="eye slider-image" src="./images/image2.jpg" alt="" onclick="changeImage()" > -->
 
-              <!-- <img src="image1.jpg" class="slider-image">
-              <img src="image2.jpg" class="slider-image">
-              <img src="image3.jpg" class="slider-image">
-              <img src="image4.jpg" class="slider-image"> -->
             </div>
             <div class="button-div">
 
@@ -101,10 +96,8 @@
               }
           
               document.addEventListener("DOMContentLoaded", function() {
-                // show the first image initially
                 showImage(0);
           
-                // add event listeners to each image
                 for (let i = 0; i < images.length; i++) {
                   images[i].addEventListener("click", function() {
                     showImage(currentIndex + 1);
@@ -117,10 +110,10 @@
 
         <div class="types" >
           <div class="types-of-galucoma">
-            <h2>Types of Galucoma</h2>
+            <h2 style="color: white;" > <span style="color: #FDBE4F;">Types</span> of Galucoma</h2>
             <div class="angles">
               <div class="closed-angle" > 
-                <h3>Closed-Angle Galucoma</h3>
+                <h3 style="" >Closed-Angle Galucoma</h3>
                 <img src="./images/clsa.png" alt="">
                 <p class="a-p">
                   Closed-angle glaucoma refers to a condition where the pressure inside the eyes becomes a lot higher than usual. The pressure gets built up because the fluid is not able to flow out as it should. This fluid is usually produced at the rear of the eye, behind the iris. It flows through the pupil into the front part of the eye.
@@ -199,12 +192,6 @@
               <div class="card">
                 <img src="./images/t1.png" class="t-image" alt="">
                 <p class="t-p" >Eye Drops and Oral Medication</p>
-                <!-- <p>Hover over the card to see the hidden paragraph.</p> -->
-                <!-- <div class="card-content">
-                  <p>This is the hidden paragraph. It will appear when the card is hovered over.
-                    This is the hidden paragraph. It will appear when the card is hovered over.
-                  </p>
-                </div> -->
                 <div class="semi-oval">
                 </div>
 
@@ -215,12 +202,7 @@
             <div class="card">
               <img src="./images/t2.png" class="t-image" alt="">
               <p class="t-p" >Eye Drops and Oral Medication</p>
-              <!-- <p>Hover over the card to see the hidden paragraph.</p> -->
-              <!-- <div class="card-content">
-                <p>This is the hidden paragraph. It will appear when the card is hovered over.
-                  This is the hidden paragraph. It will appear when the card is hovered over.
-                </p>
-              </div> -->
+  
               <div class="semi-oval">
               </div>
             <div class="mobile-div"></div>
@@ -229,64 +211,39 @@
           </div>
           <div class="card">
             <img src="./images/t3.png" class="t-image" alt="">
-            <p class="t-p" >Eye Drops and Oral Medication</p>
-            <!-- <p>Hover over the card to see the hidden paragraph.</p> -->
-            <!-- <div class="card-content">
-              <p>This is the hidden paragraph. It will appear when the card is hovered over.
-                This is the hidden paragraph. It will appear when the card is hovered over.
-              </p>
-            </div> -->
+
             <div class="semi-oval">
             </div>
-
+            
             <div class="mobile-div">
-             <p >
-              Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.
-             </p>
+              <div class="rectangle">
+                <p class="t-p" >Microsugery</p>
+                <div class="content">
+                  <div class="collapse">
+                    <p>Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+                  </div>
+                  <a style="margin-top: 1rem;" class="btn">View more ▼</a>
+                </div>
+              </div>
             </div>
 
         </div>
-            </div>
-          </div>
+      </div>
+
+          <script>
+            const btn = document.querySelector('.btn');
+            const collapse = document.querySelector('.collapse');
+
+            btn.addEventListener('click', function() {
+            collapse.classList.toggle('show');
+            if (collapse.classList.contains('show')) {
+              btn.innerHTML = 'View less';
+            } else {
+              btn.innerHTML = 'View more ';
+            }
+});
+          </script>
+
     </div>
 </body>
 </html>
-<!-- .treatments{
-  width: 100%;
-  margin-top: 4rem;
-  height: 726px;
-  background: #062851;
-}
-
-.treatments h2{
-  font-family: 'Roihu';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 60px;
-/* identical to box height, or 150% */
-
-text-align: center;
-padding-top: 3rem;
-color: #FFFFFF;
-}
-.treatment-p{
-  /* position: absolute; */
-width: 895px;
-height: 58px;
-margin: auto;
-margin-top:2rem ;
-/* left: 193px; */
-/* top: 2035px; */
-
-font-family: 'Encode Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-/* or 161% */
-
-text-align: center;
-
-color: #FFFFFF;
-} -->
