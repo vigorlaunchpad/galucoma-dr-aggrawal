@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galucoma</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <a class='logo' href="">
-              <img src="images/logo.png">
-            </a>
-        </div>
-        <img class="road-image" src="./images/background.png" alt="">
+  <div class="container">
+  <div class="navbar">
+      <a class='logo' href="">
+        <img src="images/logo.png">
+      </a>
+  </div>
+<div>
+  <img class="road-image" src="./images/background.png" alt="">
+</div>
 
         <div class="form">
             <div class="submit-form">
@@ -55,58 +58,59 @@
                            Conditions</a> and <a href="https://webdev.dragarwal.com/terms-of-use/">Privacy Policy</a>.</span>
                      </label>
                      
-                     <button type="submit" class="submit-button">SUBMIT</button>
+                     <button type="submit" class="submit-button" style="color: #FFFFFF; " >SUBMIT</button>
                    </div>
                  </form>
             </div>
         </div>
 
-        <div class="galucoma-info">
-            <h2 class="galucoma-info-heading" style="color:white" >What is <span class="yellow-span">Glaucoma</span></h2>
-            <div class="galucoma-p">
-              <p class="g-p">
-                  Glaucoma is a set of eye conditions that damages the optic nerve. The optic nerve is located at the back of the eye, and it transmits visual signals from the eye to the brain helping in visualization. Damage to the optic nerve could result in blindness.
-              </p>
-            </div>
-            <div id="image-container">
-              <div class="image-container">
 
-                <img class="eye slider-image" src="./images/image2.jpg" alt="" onclick="changeImage()" >
-                <img class="eye slider-image" src="./images/image3.png" alt="" onclick="changeImage()" style="display:none">
-                <img class="eye slider-image" src="./images/image4.png" alt="" onclick="changeImage()" style="display:none">
-                <img class="eye slider-image" src="./images/image5.png" alt="" onclick="changeImage()" style="display:none">
-                <img class="eye slider-image" src="./images/image5.1.png" alt="" onclick="changeImage()" style="display:none">
-                <img class="eye slider-image" src="./images/image6.png" alt="" onclick="changeImage()" style="display:none">
-                <img class="eye slider-image" src="./images/image7.png" alt="" onclick="changeImage()" style="display:none">
-              </div>
+<div class="info-main">
+  <div class="galucoma-information-div">
+    <h2 class="galucoma-head" style="color: #FFFFFF;" >
+      What is <span style="color:#FDBE4F" >Galucoma</span> 
+    </h2>
+    <p class="galucoma-p"> 
+      Glaucoma is a set of eye conditions that damages the optic nerve. The optic nerve is located at the back of the eye, and it transmits visual signals from the eye to the brain helping in visualization. Damage to the optic nerve could result in blindness.
+    </p>
+    <div id="image-container">
+      <div >
 
-            </div>
-            <div class="button-div">
+        <img class="eye-image" src="./images/image2.jpg" alt="" onclick="changeImage()" >
+        <img class="eye-image" src="./images/image3.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image4.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image5.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image5.1.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image6.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image7.png" alt="" onclick="changeImage()" style="display:none">
+      </div>
 
-              <button class="know-more" >Know more about Galucoma</button>
-            </div>
-            <script>
-              let images = document.getElementsByClassName("slider-image");
-              let currentIndex = 0;
-          
-              function showImage(n) {
-                images[currentIndex].style.display = "none";
-                currentIndex = (n + images.length) % images.length;
-                images[currentIndex].style.display = "block";
-              }
-          
-              document.addEventListener("DOMContentLoaded", function() {
-                showImage(0);
-          
-                for (let i = 0; i < images.length; i++) {
-                  images[i].addEventListener("click", function() {
-                    showImage(currentIndex + 1);
-                  });
-                }
+    </div>
+    <div class="button">
+      Know more about Galucoma
+    </div>
+  </div>
+</div>
+        <script>
+          let images = document.getElementsByClassName("eye-image");
+          let currentIndex = 0;
+      
+          function showImage(n) {
+            images[currentIndex].style.display = "none";
+            currentIndex = (n + images.length) % images.length;
+            images[currentIndex].style.display = "block";
+          }
+      
+          document.addEventListener("DOMContentLoaded", function() {
+            showImage(0);
+      
+            for (let i = 0; i < images.length; i++) {
+              images[i].addEventListener("click", function() {
+                showImage(currentIndex + 1);
               });
-            </script>
-        </div>
-
+            }
+          });
+        </script>
 
         <div class="types" >
           <div class="types-of-galucoma">
@@ -189,46 +193,63 @@
             <p class="treatment-p" >Depending on the type of glaucoma, the doctor may treat it using the following methods or even a combination of the methods.</p>
             <div class="cards">
 
-              <div class="card">
-                <img src="./images/t1.png" class="t-image" alt="">
-                <p class="t-p" >Eye Drops and Oral Medication</p>
-                <div class="semi-oval">
-                </div>
-
-            <div class="mobile-div"></div>
-
-
-            </div>
             <div class="card">
-              <img src="./images/t2.png" class="t-image" alt="">
-              <p class="t-p" >Eye Drops and Oral Medication</p>
-  
+              <img src="./images/t1.png" class="t-image" alt="">
+              <p class="t-p t-d" style="color: #FFFFFF;">Eye Drops and Oral Medication</p>
+
               <div class="semi-oval">
               </div>
-            <div class="mobile-div"></div>
-
-              
-          </div>
-          <div class="card">
-            <img src="./images/t3.png" class="t-image" alt="">
-
-            <div class="semi-oval">
-            </div>
             
-            <div class="mobile-div">
-              <div class="rectangle">
-                <p class="t-p" >Microsugery</p>
+              <div class="mobile-div">
+                <div class="rectangle">
+                <p class="t-p" >Eye Drops and Oral Medication</p>
                 <div class="content">
                   <div class="collapse">
                     <p>Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
                   </div>
-                  <a style="margin-top: 1rem;" class="btn">View more ▼</a>
+                  <a style="margin-top: 1rem;" class="btn">View more</a>
                 </div>
-              </div>
+                </div>
             </div>
-
+          </div>
+          <div class="card">
+            <img src="./images/t2.png" class="t-image" alt="">
+            <p class="t-p t-d" style="color: #FFFFFF;">Laser Surgery</p>
+            <div class="semi-oval">
+            </div>
+          
+            <div class="mobile-div">
+              <div class="rectangle">
+              <p class="t-p" >Microsugery</p>
+              <div class="content">
+                <div class="collapse1">
+                  <p>Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+                </div>
+                <a style="margin-top: 1rem;" class="btn1">View more</a>
+              </div>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/t3.png" class="t-image" alt="">
+          <p class="t-p t-d" style="color: #FFFFFF;">Microsugery</p>
+          <div class="semi-oval">
+          </div>
+        
+          <div class="mobile-div">
+            <div class="rectangle">
+            <p class="t-p" >Microsugery</p>
+            <div class="content">
+              <div class="collapse2">
+                <p>Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+              </div>
+              <a style="margin-top: 1rem;" class="btn2">View more</a>
+            </div>
+            </div>
         </div>
       </div>
+      </div>
+          
 
           <script>
             const btn = document.querySelector('.btn');
@@ -242,8 +263,57 @@
               btn.innerHTML = 'View more ';
             }
 });
-          </script>
+const btn1 = document.querySelector('.btn1');
+            const collapse1 = document.querySelector('.collapse1');
 
-    </div>
+            btn1.addEventListener('click', function() {
+            collapse1.classList.toggle('show');
+            if (collapse1.classList.contains('show')) {
+              btn1.innerHTML = 'View less';
+            } else {
+              btn1.innerHTML = 'View more ';
+            }
+});
+const btn2 = document.querySelector('.btn2');
+            const collapse2 = document.querySelector('.collapse2');
+
+            btn2.addEventListener('click', function() {
+            collapse2.classList.toggle('show');
+            if (collapse2.classList.contains('show')) {
+              btn2.innerHTML = 'View less';
+            } else {
+              btn2.innerHTML = 'View more ';
+            } 
+          });
+          </script>
+        </div>
+
+        <div class="hero-section">
+          
+            <img class="hero-image" src="./images/hero.png" alt="">
+          <div class="grid-container">
+            <div class="grid-item-1">
+              <img class="hero1" src="./images/hero1.png" alt="">
+            </div>
+            
+            <div class="grid-item-2"><img class="hero2" src="./images/hero2.png" alt="">
+            </div>
+            
+            <div class="grid-item-3"><img class="hero3" src="./images/hero3.png" alt="">
+            </div>
+            <div class="grid-item-4">
+              <img class="hero4" src="./images/hero4.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="my-grid-container">
+          <div class="my-grid-item-1"><img src="./images/hero-mobile-1.png" alt=""></div>
+          <div class="my-grid-item-2"><img src="./images/hero-mobile-2.png" alt=""></div>
+          <div class="my-grid-item-3"><img src="./images/hero-mobile-3.png" alt=""></div>
+          <div class="my-grid-item-4"><img src="./images/hero-mobile-4.png" alt=""></div>
+        </div>
+
+</div>
 </body>
 </html>
